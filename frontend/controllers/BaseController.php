@@ -1,4 +1,5 @@
 <?php
+
 namespace frontend\controllers;
 
 use Yii;
@@ -14,7 +15,6 @@ class BaseController extends ActiveController
         $behaviors = parent::behaviors();
 
 
-
         $behaviors['contentNegotiator'] = [
 
             'class' => 'yii\filters\ContentNegotiator',
@@ -26,7 +26,6 @@ class BaseController extends ActiveController
             ]
 
         ];
-
 
 
         return $behaviors;
