@@ -60,6 +60,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        Yii::debug('11111111');
         return $this->render('index');
     }
 
@@ -70,6 +71,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        Yii::warning('11111111');
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
